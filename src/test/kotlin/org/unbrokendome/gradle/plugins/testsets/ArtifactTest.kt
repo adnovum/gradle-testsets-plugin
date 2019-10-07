@@ -35,7 +35,7 @@ class ArtifactTest {
         assert(project.tasks, "tasks")
                 .containsItem("fooJar") {
                     it.isInstanceOf(Jar::class.java) {
-                        it.prop("classifier", Jar::getClassifier)
+                        it.prop("classifier") { it.archiveClassifier.get()}
                                 .isEqualTo("foo-classifier")
                     }
                 }

@@ -123,10 +123,10 @@ private open class DefaultTestSetContainer
     private fun createSourceSetForTestSet(name: String): SourceSet =
             project.sourceSets.create(NamingConventions.sourceSetName(name))
                     .also { sourceSet ->
-                        sourceSet.compileClasspath = project.layout.configurableFiles(
+                        sourceSet.compileClasspath = project.objects.fileCollection().from(
                                 project.sourceSets["main"].output,
                                 project.configurations[sourceSet.compileClasspathConfigurationName])
-                        sourceSet.runtimeClasspath = project.layout.configurableFiles(
+                        sourceSet.runtimeClasspath = project.objects.fileCollection().from(
                                 sourceSet.output,
                                 project.sourceSets["main"].output,
                                 project.configurations[sourceSet.runtimeClasspathConfigurationName])

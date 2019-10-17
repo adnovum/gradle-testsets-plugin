@@ -33,8 +33,8 @@ class ArtifactTest {
 
         assertThat(this::project)
             .containsTask<Jar>("fooJar")
-            .prop("classifier", @Suppress("DEPRECATION") Jar::getClassifier)
-            .isEqualTo("foo-classifier")
+            .prop("classifier") { it.archiveClassifier.get() }
+                .isEqualTo("foo-classifier")
     }
 
 

@@ -13,7 +13,7 @@ endif::[]
 A plugin for the Gradle build system that allows specifying test sets (like integration or acceptance tests). A test set is a logical grouping of a source set and related dependency configurations, tasks and artifacts.
 
 IMPORTANT: Version 2.x of this plugin is a complete rewrite in Kotlin, using some recent Gradle features for deferred configuration.
-As such, it requires *Gradle 4.10 or later*. If you are using an earlier version of Gradle, please refer to the
+As such, it requires *Gradle 5.1.1 or later*. If you are using an earlier version of Gradle, please refer to the
 https://github.com/unbroken-dome/gradle-testsets-plugin/tree/1.x[1.x versions] of the plugin.
 
 toc::[]

@@ -31,7 +31,7 @@ Add the following to your build.gradle file:
 ----
 // The plugins block needs to be at the top of your build script
 plugins {
-    id 'org.unbroken-dome.test-sets' version '2.2.1'
+    id 'org.unbroken-dome.test-sets' version '2.3.0-adnovum'
 }
 
 testSets {

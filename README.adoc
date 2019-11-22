@@ -392,7 +392,7 @@ putting their name, similar to Groovy (you need to put the names in quotes, howe
 import org.unbrokendome.gradle.plugins.testsets.dsl.TestLibrary
 
 plugins {
-    id("org.unbroken-dome.test-sets") version "2.2.1"
+    id("org.unbroken-dome.test-sets") version "2.3.0-adnovum"
 }
 
 testSets {

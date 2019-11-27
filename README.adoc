@@ -353,7 +353,7 @@ To create a test set, use any of the common idioms from the Kotlin DSL:
 [source,kotlin]
 ----
 plugins {
-    id("org.unbroken-dome.test-sets") version "2.2.1"
+    id("org.unbroken-dome.test-sets") version "2.3.0-adnovum"
 }
 
 testSets {

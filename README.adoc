@@ -68,7 +68,7 @@ To use the TestSets plugin, include the following in your Gradle script:
 [source,groovy]
 ----
 plugins {
-    id 'org.unbroken-dome.test-sets' version '2.2.1'
+    id 'org.unbroken-dome.test-sets' version '2.3.0-adnovum'
 }
 ----
 
